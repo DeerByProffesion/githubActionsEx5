@@ -11,7 +11,7 @@ jobs:
           - node-version: 21
             operation-system: ubuntu-latest
         exclude:
-          -  node-cersion: 23
+          -  node-version: 23
              operation-system: ubuntu-latest
     runs-on: ${{ matrix.operating-system }}
     steps:
