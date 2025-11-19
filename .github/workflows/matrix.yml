@@ -8,11 +8,11 @@ jobs:
         node-version: [22, 23, 24]
         operation-system: [ubuntu-latest, windows-latest]
         include:
-          - operation-system: ubuntu-latest
-            node-version: 21
+          - node-version: 21
+            operation-system: ubuntu-latest
         exclude:
-          - operation-system: ubuntu-latest
-            node-cersion: 23
+          -  node-cersion: 23
+             operation-system: ubuntu-latest
     runs-on: ${{ matrix.operating-system }}
     steps:
       - name: Get Code
