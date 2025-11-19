@@ -7,13 +7,13 @@ on:
         required: false
         default: dist
         type: string
-  secrets:
-    some_secret:
-      required: false
-  outputs:
-    result:
-      description: The result of the deploy operation
-      value: ${{ jobs.deploy.outputs.outcome }}
+    secrets:
+      some_secret:
+        required: false
+    outputs:
+      result:
+        description: The result of the deploy operation
+        value: ${{ jobs.deploy.outputs.outcome }}
 jobs:
   deploy:
     outputs:
